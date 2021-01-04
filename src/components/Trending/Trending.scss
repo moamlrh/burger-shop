@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap");
+
+.tred-desr {
+  margin-top: 100px;
+  font-family: Jost;
+}
+
+.item {
+  padding: 10px;
+  margin: 50px auto;
+  h1 {
+    font-size: 50px;
+  }
+  .items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    .item {
+      background-color: rgba(238, 238, 238, 0.37);
+      padding: 10px;
+      border-radius: 20px;
+      img {
+        width: 100%;
+      }
+      h3 {
+        font-size: 25px;
+        padding: 20px 5px;
+      }
+      p {
+        color: grey;
+        font-size: 17px;
+        margin: 10px auto;
+      }
+      .price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px auto;
+        padding: 20px auto;
+        & > span {
+          background-color: rgba(255, 0, 0, 0.836);
+          padding: 6px 20px;
+          border-radius: 20px;
+          color: white;
+        }
+        button {
+          padding: 10px 20px;
+          border-radius: 20px;
+          border: 0;
+          background-color: rgba(255, 255, 255, 0.219);
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          span {
+            margin-left: 15px;
+          }
+          &:hover {
+            * {
+              color: rgba(255, 0, 0, 0.664);
+            }
+          }
+        }
+      }
+    }
+  }
+  @media all and (max-width: 1030px) {
+    .items {
+      grid-template-columns: repeat(2, 1fr);
+      @media all and (max-width: 650px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}

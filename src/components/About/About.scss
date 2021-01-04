@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap");
+
+.about {
+  margin-top: 100px;
+  font-family: Jost;
+  display: flex;
+  padding: 10px 20px;
+  * {
+    transition: all 0.4s;
+  }
+  .image {
+    img {
+      border-radius: 50px;
+      box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+      transition: box-shadow 0.5s;
+      will-change: transform;
+      margin: auto;
+      width: 600px;
+      &:hover {
+        box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+  .info {
+    align-self: center;
+    padding: 10px;
+    span {
+      padding: 2px 20px;
+      color: white;
+      background-color: black;
+      border-radius: 40px;
+    }
+    h1 {
+      font-size: 50px;
+      @media all and(max-width:1500px) {
+        font-size: 35px;
+      }
+    }
+    p {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-size: 16px;
+      color: grey;
+      margin: 15px auto;
+    }
+    h4 {
+      color: rgb(77, 77, 77);
+      font-size: 18px;
+    }
+  }
+
+  @media all and (max-width: 1030px) {
+    flex-direction: column;
+    .image {
+      margin-bottom: 40px;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 80%;
+        margin: auto;
+      }
+    }
+    @media all and (max-width: 650px) {
+      .info {
+        text-align: center;
+        h1 {
+          margin-top: 15px;
+          font-size: 23px;
+        }
+        p {
+          font-size: 14px;
+        }
+        h4 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

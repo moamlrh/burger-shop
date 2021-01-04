@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap");
+.layers {
+  background-color: #191a1d;
+  font-family: Jost;
+  color: white;
+  padding: 30px 0px;
+  .layer {
+    display: flex;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+    .info {
+      padding: 10px;
+      span {
+        background-color: red;
+        padding: 5px;
+        border-radius: 30px;
+        margin: 10px auto;
+      }
+      h1 {
+        font-size: 50px;
+        margin: 15px auto;
+      }
+      button {
+        padding: 20px 40px;
+        border-radius: 40px;
+        font-size: 20px;
+        bottom: 200px;
+        margin-top: 20px;
+        font-weight: 600;
+        background-color: #ff3a3a;
+        border: 1px solid #ff3a3a;
+        color: white;
+        transition: all 0.5s;
+        cursor: pointer;
+        &:hover {
+          background-color: #ff3a3a00;
+          border: 1px solid white;
+        }
+      }
+    }
+  }
+  .layer-2 {
+    flex-direction: row-reverse;
+  }
+  @media all and (max-width: 1230px) {
+    .layer {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 50px;
+      img {
+        width: 50%;
+      }
+      .info{
+        h1{
+          font-size: 6vw;
+        }
+        button{
+          padding: 10px 15px ;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
