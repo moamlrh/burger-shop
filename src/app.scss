@@ -8,11 +8,11 @@ html {
   overflow-y: auto;
   scroll-behavior: smooth;
 }
+a {
+  text-decoration: none !important;
+}
 
 .app {
-  a{
-    text-decoration: none;
-  }
   .bg {
     background-image: url("./images/bg.jpg");
     background-repeat: no-repeat;
